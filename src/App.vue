@@ -12,16 +12,17 @@ export default {
   components: {
     TheHeader,
     TheMain
-}
+  }
 }
 </script>
 
 <style>
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 #app {
   font-family: sans-serif, Helvetica, Arial;
   -webkit-font-smoothing: antialiased;

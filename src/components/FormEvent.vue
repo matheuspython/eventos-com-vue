@@ -4,7 +4,7 @@
       <input v-model="nameOfPeople" placeholder="escreva seu nome aqui" @keyup.enter="onKeyUp" type="text">
 
       <button type="submit">Enviar</button>
-      {{nameOfPeople}}
+      {{ nameOfPeople }}
     </form>
   </div>
 </template>
@@ -13,18 +13,18 @@
 <script>
 export default {
   name: 'FormEvent',
-  data(){
-    return{
+  data() {
+    return {
       nameOfPeople: this.nameOfPeople
     }
-  },  
+  },
   methods: {
     onKeyUp() {
-      alert('Olá seja bem vindo ',this.nameOfPeople)
+      alert('Olá seja bem vindo ', this.nameOfPeople)
     },
-      onSubmit() {
-        alert('seja bem vindo '+this.nameOfPeople)
-      }
+    onSubmit() {
+      alert('seja bem vindo ' + this.nameOfPeople)
+    }
   },
 }
 </script>
@@ -51,10 +51,12 @@ input {
 
   width: 100%;
 }
+
 input::placeholder {
   color: #fff;
 }
-button{
+
+button {
   border: 0;
   height: 25px;
   background-color: #1830e9;
@@ -63,7 +65,8 @@ button{
   border-radius: 8px;
   transition: .4s;
 }
-button:hover{
-   background-color: #5666e2;
+
+button:hover {
+  background-color: #5666e2;
 }
 </style>
